@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Merriweather+Sans:wght@700&display=swap" rel="stylesheet" />
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+   <link rel="stylesheet" href="styles.css">
+
+    <style>
+    .login-page {
+  display: flex;
+  flex-direction: column;
+  min-height: screen;
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    #6b16ac 28.36%,
+    #371b70 65.29%,
+    #4e317a 80.43%,
+    #8d7d7d 100%
+  );
+}
+
+.login-wrapper {
+  padding: 24px;
+}
+
+.brand-logo {
+  color: #fff;
+  font-family: Merriweather;
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.form-content {
+  width: 533px;
+  border-radius: 48px;
+  border: 1px solid #fff;
+  background-color: rgba(217, 217, 217, 0.1);
+  backdrop-filter: blur(17.5px);
+  padding: 48px;
+}
+
+.form-title {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 60px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form-group {
+  position: relative;
+}
+
+.input-label {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.form-input {
+  width: 100%;
+  height: 73px;
+  border-radius: 34px;
+  border: 1px solid #c8b9b9;
+  background-color: rgba(216, 204, 204, 0.61);
+  padding-left: 24px;
+  padding-right: 24px;
+  color: #fff;
+}
+
+.icon-wrapper {
+  position: absolute;
+  right: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.remember-checkbox {
+  width: 16px;
+  height: 15px;
+  border: 1px solid #8d7d7d;
+  background-color: #fff;
+}
+
+.remember-label {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.login-button {
+  width: 100%;
+  height: 73px;
+  border-radius: 34px;
+  background-color: #fff;
+  color: #000;
+  font-family: Poppins;
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  border: none;
+  cursor: pointer;
+}
+
+.signup-text {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 18px;
+  text-align: center;
+  margin: 0;
+}
+
+@media (max-width: 991px) {
+  .login-wrapper {
+    padding: 20px;
+  }
+
+  .brand-logo {
+    font-size: 48px;
+  }
+
+  .form-container {
+    margin-top: 32px;
+  }
+
+  .form-content {
+    width: 90%;
+    padding: 32px;
+  }
+
+  .form-title {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 640px) {
+  .login-wrapper {
+    padding: 16px;
+  }
+
+  .brand-logo {
+    font-size: 36px;
+  }
+
+  .form-container {
+    margin-top: 24px;
+  }
+
+  .form-content {
+    width: 100%;
+    padding: 24px;
+  }
+
+  .form-title {
+    font-size: 36px;
+    margin-bottom: 32px;
+  }
+
+  .login-form {
+    gap: 16px;
+  }
+}
+ </style>
+    
+<main class="login-page">
+  <div class="login-wrapper">
+    <header>
+      <h1 class="brand-logo">A&amp;F</h1>
+    </header>
+    <div class="form-container">
+      <div class="form-content">
+        <h2 class="form-title">Login</h2>
+        <form class="login-form">
+          <div class="form-group">
+            <label class="input-label">Username</label>
+            <div class="input-wrapper">
+              <input type="text" class="form-input" />
+              <div class="icon-wrapper">
+                <svg width="30" height="27" viewbox="0 0 30 27" fill="none" xmlns="http://www.w3.org/2000/svg" class="input-icon">
+                  <path d="M23.75 23.625V21.375C23.75 20.1815 23.2232 19.0369 22.2855 18.193C21.3479 17.3491 20.0761 16.875 18.75 16.875H11.25C9.92392 16.875 8.65215 17.3491 7.71447 18.193C6.77678 19.0369 6.25 20.1815 6.25 21.375V23.625" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path d="M15 12.375C17.7614 12.375 20 10.3603 20 7.875C20 5.38972 17.7614 3.375 15 3.375C12.2386 3.375 10 5.38972 10 7.875C10 10.3603 12.2386 12.375 15 12.375Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="input-label">Password</label>
+            <div class="input-wrapper">
+              <input type="password" class="form-input" />
+              <div class="icon-wrapper">
+                <svg width="29" height="30" viewbox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="input-icon">
+                  <path d="M14.5 21.25C15.1673 21.25 15.7083 20.6904 15.7083 20C15.7083 19.3096 15.1673 18.75 14.5 18.75C13.8326 18.75 13.2916 19.3096 13.2916 20C13.2916 20.6904 13.8326 21.25 14.5 21.25Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path d="M22.9583 12.5H6.04167C4.70698 12.5 3.625 13.6193 3.625 15V25C3.625 26.3807 4.70698 27.5 6.04167 27.5H22.9583C24.293 27.5 25.375 26.3807 25.375 25V15C25.375 13.6193 24.293 12.5 22.9583 12.5Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path d="M8.45837 12.5V8.75C8.45837 7.0924 9.0949 5.50269 10.2279 4.33058C11.361 3.15848 12.8977 2.5 14.5 2.5C16.1024 2.5 17.6391 3.15848 18.7721 4.33058C19.9052 5.50269 20.5417 7.0924 20.5417 8.75V12.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="remember-me">
+            <input type="checkbox" class="remember-checkbox" />
+            <label class="remember-label">Remember me</label>
+          </div>
+          <button type="submit" class="login-button">Login</button>
+          <p class="signup-text">Don't have an account? Sign up</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</main>
+  </head>
+</html>
